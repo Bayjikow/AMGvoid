@@ -269,7 +269,7 @@ export default {
     selectLanguage: 'Select a language',
     theme: 'Theme',
     appTheme: 'App Theme',
-    themeDescription: 'Adjust the application\'s visual theme.',
+    themeDescription: 'Switch between light and dark mode.',
     securityTips: 'Security Tips',
     securityTipsDescription: 'Receive proactive security recommendations.',
     logout: 'Log Out',

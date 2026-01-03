@@ -64,11 +64,17 @@
             <template #title>{{ $t('settings.theme') }}</template>
             <template #content>
               <div class="flex align-items-center justify-content-between">
-                <div>
+                <div class="flex-1">
                   <div class="font-semibold mb-1">{{ $t('settings.appTheme') }}</div>
                   <div class="text-sm text-color-secondary">{{ $t('settings.themeDescription') }}</div>
                 </div>
-                <InputSwitch v-model="userStore.user.settings.theme" />
+                <div class="flex align-items-center gap-3">
+                  <div class="flex align-items-center gap-2">
+                    <i class="pi pi-sun" :style="{ color: !userStore.user.settings.theme ? 'var(--primary-color)' : 'var(--text-color-secondary)' }"></i>
+                    <InputSwitch v-model="userStore.user.settings.theme" @change="handleThemeChange" />
+                    <i class="pi pi-moon" :style="{ color: userStore.user.settings.theme ? 'var(--primary-color)' : 'var(--text-color-secondary)' }"></i>
+                  </div>
+                </div>
               </div>
             </template>
           </Card>
@@ -140,6 +146,10 @@ function changeLanguage() {
   locale.value = currentLanguage.value
   localStorage.setItem('language', currentLanguage.value)
   userStore.user.settings.language = currentLanguage.value
+}
+
+function handleThemeChange() {
+  userStore.updateSettings({ theme: userStore.user.settings.theme })
 }
 
 function logout() {

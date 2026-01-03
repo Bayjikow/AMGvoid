@@ -2,8 +2,9 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
 export const useUserStore = defineStore('user', () => {
-  // Load saved name from localStorage
+  // Load saved name and theme from localStorage
   const savedName = localStorage.getItem('userName')
+  const savedTheme = localStorage.getItem('theme')
   
   const user = ref({
     name: savedName || 'Elara Vance',
@@ -14,7 +15,7 @@ export const useUserStore = defineStore('user', () => {
     streak: 125,
     settings: {
       language: 'English',
-      theme: true,
+      theme: savedTheme === 'light' ? false : true, // true = dark, false = light
       securityTips: true
     }
   })
@@ -51,6 +52,11 @@ export const useUserStore = defineStore('user', () => {
 
   function updateSettings(newSettings) {
     user.value.settings = { ...user.value.settings, ...newSettings }
+    
+    // Save theme to localStorage if it's being updated
+    if (newSettings.theme !== undefined) {
+      localStorage.setItem('theme', newSettings.theme ? 'dark' : 'light')
+    }
   }
 
   function updateProfile(data) {

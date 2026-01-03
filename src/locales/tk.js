@@ -269,7 +269,7 @@ export default {
     selectLanguage: 'Dil saýlaň',
     theme: 'Tema',
     appTheme: 'Programma teması',
-    themeDescription: 'Programmanyň wizual temasyny sazlaň.',
+    themeDescription: 'Ýagty we garaňky režim arasynda üýtgediň.',
     securityTips: 'Howpsuzlyk maslahatlary',
     securityTipsDescription: 'Howpsuzlyk boýunça aktiv maslahatlar alyň.',
     logout: 'Çyk',

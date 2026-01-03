@@ -6,7 +6,7 @@ import router from './router'
 import i18n from './i18n'
 import App from './App.vue'
 
-import 'primevue/resources/themes/lara-dark-cyan/theme.css'
+// Import PrimeVue CSS (without theme - will be loaded dynamically)
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'

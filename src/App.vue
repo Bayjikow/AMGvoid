@@ -80,19 +80,31 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useUserStore } from './stores/user'
+import { useTheme } from './composables/useTheme'
 import Avatar from 'primevue/avatar'
 import Button from 'primevue/button'
 import Toast from 'primevue/toast'
 
 const route = useRoute()
 const userStore = useUserStore()
+const { initTheme, switchTheme } = useTheme()
 const sidebarActive = ref(false)
 
 const isLoginPage = computed(() => route.path === '/login')
 const isQuizPage = computed(() => route.path.startsWith('/quiz'))
+
+// Initialize theme on mount
+onMounted(() => {
+  initTheme(userStore.user.settings.theme)
+})
+
+// Watch for theme changes
+watch(() => userStore.user.settings.theme, (newTheme) => {
+  switchTheme(newTheme)
+})
 
 function toggleSidebar() {
   sidebarActive.value = !sidebarActive.value
