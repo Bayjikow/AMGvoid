@@ -183,39 +183,28 @@ export default {
 
   // Lesson Quiz
   lessonQuiz: {
-    title: 'Sapak Synag',
+    title: 'Sapak Synagy',
     description: 'Sapak tamamlamak we bal gazanmak üçin bu 5 soragly synag geçiň.',
+    subtitle: 'Sapak tamamlamak we bal gazanmak üçin 5 soragly synagy geçiň.',
     passRequirement: 'Geçmek we indiki sapak açmak üçin azyndan 60% bal almaly.',
-    startQuiz: 'Synag başla',
+    requirement: 'Geçmek we indiki sapak açmak üçin azyndan 60% bal almaly.',
+    startQuiz: 'Synagy başla',
     question: 'Sorag',
     previous: 'Öňki',
     next: 'Indiki',
-    submitQuiz: 'Synag tabşyr',
+    submitQuiz: 'Synagy tabşyr',
     quizPassed: 'Synag geçildi!',
     quizFailed: 'Synag geçilmedi',
-    correct: 'Dogry',
-    passedMessage: 'Ajaýyp! Indi indiki sapak geçip bilersiňiz! 🎉',
-    failedMessage: 'Geçmek üçin azyndan 60% gerek. Sapak gaýtadan gözden geçiriň we täzeden synanyşyň. 📚',
-    xpEarned: 'Gazanylan Tejribe Nokady',
-    reviewAnswers: 'Jogaplary gözden geçir',
-    retryQuiz: 'Synag gaýtala'
-  },
-
-  // Lesson Quiz
-  lessonQuiz: {
-    title: 'Sapak synagy',
-    subtitle: 'Sapak tamamlamak we bal gazanmak üçin 5 soragly synagy geçiň.',
-    requirement: 'Geçmek we indiki sapak açmak üçin azyndan 60% bal almaly.',
-    startQuiz: 'Synagy başla',
-    question: '{current}-nji sorgy {total}-den',
-    submitQuiz: 'Synagy tabşyr',
     passed: 'Synag geçildi!',
     failed: 'Synag geçilmedi',
+    correct: 'Dogry',
     score: '{score}/{total}',
     percentage: '{percent}% Dogry',
+    passedMessage: 'Ajaýyp! Indi indiki sapak geçip bilersiňiz! 🎉',
+    failedMessage: 'Geçmek üçin azyndan 60% gerek. Sapak gaýtadan gözden geçiriň we täzeden synanyşyň. 📚',
     passMessage: 'Ajaýyp! Indi indiki sapak geçip bilersiňiz! 🎉',
     failMessage: 'Geçmek üçin azyndan 60% gerek. Sapak gaýtadan öwreniň we täzeden synanyşyň. 📚',
-    xpEarned: '+{xp} TN',
+    xpEarned: 'Gazanylan Tejribe Nokady',
     xpLabel: 'Gazanylan tejribe nokady',
     reviewAnswers: 'Jogaplary gözden geçir',
     retryQuiz: 'Täzeden synanyş'

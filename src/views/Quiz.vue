@@ -64,7 +64,7 @@
             <div class="flex align-items-start gap-3">
               <i class="pi pi-info-circle" style="color: var(--primary-color); font-size: 1.5rem;"></i>
               <div>
-                <div class="font-bold mb-2">Explanation</div>
+                <div class="font-bold mb-2">{{ t('quiz.explanation') }}</div>
                 <p class="text-color-secondary line-height-3">
                   {{ translatedQuestion.explanation }}
                 </p>

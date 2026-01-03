@@ -73,20 +73,6 @@
             </template>
           </Card>
 
-          <!-- Security Tips -->
-          <Card>
-            <template #title>{{ $t('settings.securityTips') }}</template>
-            <template #content>
-              <div class="flex align-items-center justify-content-between">
-                <div>
-                  <div class="font-semibold mb-1">{{ $t('settings.securityTips') }}</div>
-                  <div class="text-sm text-color-secondary">{{ $t('settings.securityTipsDescription') }}</div>
-                </div>
-                <InputSwitch v-model="userStore.user.settings.securityTips" />
-              </div>
-            </template>
-          </Card>
-
           <!-- Logout Button -->
           <Button 
             :label="$t('settings.logout')" 

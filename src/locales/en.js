@@ -185,7 +185,9 @@ export default {
   lessonQuiz: {
     title: 'Lesson Quiz',
     description: 'Complete this 5-question quiz to finish the lesson and earn your score.',
+    subtitle: 'Complete this 5-question quiz to finish the lesson and earn your score.',
     passRequirement: 'You need to score at least 60% to pass and unlock the next lesson.',
+    requirement: 'You need to score at least 60% to pass and unlock the next lesson.',
     startQuiz: 'Start Quiz',
     question: 'Question',
     previous: 'Previous',
@@ -193,29 +195,16 @@ export default {
     submitQuiz: 'Submit Quiz',
     quizPassed: 'Quiz Passed!',
     quizFailed: 'Quiz Failed',
-    correct: 'Correct',
-    passedMessage: 'Great job! You can now proceed to the next lesson! 🎉',
-    failedMessage: 'You need at least 60% to pass. Please review the lesson and try again. 📚',
-    xpEarned: 'Experience Points Earned',
-    reviewAnswers: 'Review Answers',
-    retryQuiz: 'Retry Quiz'
-  },
-
-  // Lesson Quiz
-  lessonQuiz: {
-    title: 'Lesson Quiz',
-    subtitle: 'Complete this 5-question quiz to finish the lesson and earn your score.',
-    requirement: 'You need to score at least 60% to pass and unlock the next lesson.',
-    startQuiz: 'Start Quiz',
-    question: 'Question {current} of {total}',
-    submitQuiz: 'Submit Quiz',
     passed: 'Quiz Passed!',
     failed: 'Quiz Failed',
+    correct: 'Correct',
     score: '{score}/{total}',
     percentage: '{percent}% Correct',
+    passedMessage: 'Great job! You can now proceed to the next lesson! 🎉',
+    failedMessage: 'You need at least 60% to pass. Please review the lesson and try again. 📚',
     passMessage: 'Great job! You can now proceed to the next lesson! 🎉',
     failMessage: 'You need at least 60% to pass. Please review the lesson and try again. 📚',
-    xpEarned: '+{xp} XP',
+    xpEarned: 'Experience Points Earned',
     xpLabel: 'Experience Points Earned',
     reviewAnswers: 'Review Answers',
     retryQuiz: 'Retry Quiz'
